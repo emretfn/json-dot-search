@@ -9,6 +9,10 @@
   "categories": [
     "Other"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emretfn/json-dot-search"
+  },
   "activationEvents": [
     "onLanguage:json",
     "onLanguage:jsonc"
