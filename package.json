@@ -2,8 +2,9 @@
   "name": "smart-json-dot-search",
   "displayName": "Smart JSON Dot Search",
   "description": "Enhanced JSON search with dot notation support (e.g., 'foo.bar' to find nested properties)",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "emretfn",
+  "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.74.0"
   },
