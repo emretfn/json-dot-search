@@ -1,0 +1,54 @@
+{
+  "name": "json-dot-search",
+  "displayName": "JSON Dot Search",
+  "description": "Enhanced JSON search with dot notation support (e.g., 'foo.bar' to find nested properties)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:json",
+    "onLanguage:jsonc"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "jsonDotSearch.searchWithDotNotation",
+        "title": "Search JSON with Dot Notation",
+        "category": "JSON Dot Search"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "jsonDotSearch.searchWithDotNotation",
+        "key": "ctrl+shift+f",
+        "mac": "cmd+shift+f",
+        "when": "editorLangId == json || editorLangId == jsonc"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "jsonDotSearch.searchWithDotNotation",
+          "when": "editorLangId == json || editorLangId == jsonc",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "pnpm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.74.0",
+    "@types/node": "16.x",
+    "typescript": "^4.9.4"
+  },
+  "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184"
+}

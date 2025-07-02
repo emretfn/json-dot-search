@@ -1,0 +1,45 @@
+{
+  "foo": {
+    "bar": "hello",
+    "baz": {
+      "nested": "world"
+    }
+  },
+  "user": {
+    "profile": {
+      "name": "John Doe",
+      "email": "john@example.com",
+      "settings": {
+        "theme": "dark",
+        "notifications": true
+      }
+    },
+    "preferences": {
+      "language": "en",
+      "timezone": "UTC"
+    }
+  },
+  "config": {
+    "debug": true,
+    "version": "1.0.0",
+    "features": {
+      "experimental": false,
+      "beta": {
+        "enabled": true,
+        "features": ["newUI", "fastSearch"]
+      }
+    }
+  },
+  "data": {
+    "items": [
+      {
+        "id": 1,
+        "name": "Item 1"
+      },
+      {
+        "id": 2,
+        "name": "Item 2"
+      }
+    ]
+  }
+}
